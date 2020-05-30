@@ -110,6 +110,14 @@ header {
 
 .textfield {
     display: none;
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+}
+
+.textfield:focus {
+    outline: 0;
+    border-color: rgb(233, 236, 36);
 }
 
 .title {
@@ -117,7 +125,15 @@ header {
 }
 
 /* --Decorators-- */
-.completed {
+.list__item.completed .title{
     text-decoration: line-through;
     color: lightgray;
+}
+
+.editing .title{
+    display: none;
+}
+
+.editing .textfield{
+    display: block;
 }
